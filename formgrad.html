@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 1-2</title>
+  <link rel="stylesheet" href="css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous"/>
+</head>
+<body>
+<header class="page__header">
+  <h1>
+    Lab 1 by Alexey Horbunov
+  </h1>
+</header>
+
+<div class="main__content">
+  <nav class="navigation">
+    <h4>Меню сайта: </h4>
+    <ul class="menu__items">
+      <li class="menu__item">
+        <a href="index.html">
+          Главная страница
+        </a>
+      </li>
+
+      <li class="menu__item menu__item-active">
+        <a href="formgrad.html">
+          Заполнить форму
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section class="contact" id="contact">
+      <div class="section__header header__form">
+        <h3>Заполните информацию о себе</h3>
+      </div>
+      <div class="contact__content">
+        <form action="#" class="form">
+          <div class="form__wrap">
+            <input type="text" name="firstName" class="form__inp" placeholder="Имя" required>
+            <input type="text" name="lastName" class="form__inp" placeholder="Фамилия" required>
+          </div>
+          <div class="form__wrap">
+            <input type="email" name="firstName" class="form__inp" placeholder="Email" required>
+            <input type="tel" name="firstName" class="form__inp" placeholder="Телефон">
+          </div>
+          <div class="form__contacts">
+            <input type="tel" name="firstName" class="form__inp" placeholder="Twitter">
+            <input type="tel" name="firstName" class="form__inp" placeholder="Facebook">
+            <input type="tel" name="firstName" class="form__inp" placeholder="LinkedIn">
+            <input type="tel" name="firstName" class="form__inp" placeholder="Telegram">
+            <input type="tel" name="firstName" class="form__inp" placeholder="VKontakte">
+          </div>
+          <!--        <textarea name="message" class="form__message" placeholder="Message"></textarea>-->
+          <div class="form__send">
+            <label>
+              <input type="checkbox" name="subs" class="form__subs">
+              Подписаться на рассылку факультета
+            </label>
+            <input type="submit" class="form__btn" value="Отправить">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>
