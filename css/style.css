@@ -273,6 +273,14 @@ section {
 
 .form__wrap {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__wrap > div, .form__contacts > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form__inp {
@@ -351,4 +359,62 @@ section {
 .form__btn:hover {
   background-color: #008a56;
 }
+
+
+
+/* Popup */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__active {
+  display: flex;
+}
+
+.popup__data {
+  width: 645px;
+  overflow-y: auto;
+}
+
+.popup__wrap {
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 12px 0 black;
+}
+
+.popup__close {
+  position: absolute;
+  font-size: 40px;
+  opacity: 0.8;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.popup__close:hover {
+  opacity: 1;
+}
+
+
+
+.error {
+  color: red;
+  display: block;
+}
+
+
+
+/* SELECT */
+
 

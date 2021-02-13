@@ -41,24 +41,34 @@
       <div class="contact__content">
         <form action="#" class="form">
           <div class="form__wrap">
-            <input type="text" name="firstName" class="form__inp" placeholder="Имя" pattern="[А-ҐЄІЇЩЬЮЯа-ґєіїщьюя'``\s-]+" required>
-            <input type="text" name="lastName" class="form__inp" placeholder="Фамилия" pattern="[А-ҐЄІЇЩЬЮЯа-ґєіїщьюя'``\s-]{1,}" required>
+            <div><input type="text" name="firstName" class="form__inp" placeholder="Имя"></div>
+            <div><input type="text" name="lastName" class="form__inp" placeholder="Фамилия"></div>
           </div>
           <div class="form__wrap">
-            <input type="email" name="firstName" class="form__inp" placeholder="Email" required>
-            <input type="tel" name="firstName" class="form__inp" placeholder="Телефон">
+            <div><input type="email" name="email" class="form__inp" placeholder="Email" required>
+            </div>
+            <div><input type="tel" name="phone" class="form__inp" placeholder="Телефон"></div>
           </div>
           <div class="form__contacts">
-            <input type="url" name="firstName" class="form__inp" placeholder="Twitter">
-            <input type="url" name="firstName" class="form__inp" placeholder="Facebook">
-            <input type="url" name="firstName" class="form__inp" placeholder="LinkedIn">
-            <input type="url" name="firstName" class="form__inp" placeholder="Telegram">
-            <input type="url" name="firstName" class="form__inp" placeholder="VKontakte">
+            <div><input type="url" name="linkSocial" class="form__inp" placeholder="Twitter"></div>
+            <div><input type="url" name="linkSocial" class="form__inp" placeholder="Facebook"></div>
+            <div><input type="url" name="linkSocial" class="form__inp" placeholder="LinkedIn"></div>
+            <div><input type="url" name="linkSocial" class="form__inp" placeholder="Telegram"></div>
+            <div><input type="url" name="linkSocial" class="form__inp" placeholder="VKontakte"></div>
+          </div>
+          <div class="custom-select" style="width:200px; margin: 0 auto">
+            <select name="courseSelect">
+              <option value="0">Выберите курс:</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
           </div>
           <!--        <textarea name="message" class="form__message" placeholder="Message"></textarea>-->
           <div class="form__send">
             <label>
-              <input type="checkbox" name="subs" class="form__subs">
+              <input type="checkbox" name="subscription" class="form__subs">
               Подписаться на рассылку факультета
             </label>
             <input type="submit" class="form__btn" value="Отправить">
@@ -69,5 +79,16 @@
   </main>
 </div>
 
+
+<div class="popup">
+  <div class="popup__wrap">
+    <div class="popup__data">
+    </div>
+    <i class="fas fa-times popup__close"></i>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="build/form.js"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+{
+  "name": "web-lab",
+  "version": "1.0.0",
+  "description": "Web programming laboratory work, Alexey Horbunov, FI-91",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Algoritm211/web-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Algoritm211/web-lab/issues"
+  },
+  "homepage": "https://github.com/Algoritm211/web-lab#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "jquery": "^3.5.1",
+    "jquery-validation": "^1.19.3"
+  }
+}
