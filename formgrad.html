@@ -41,20 +41,20 @@
       <div class="contact__content">
         <form action="#" class="form">
           <div class="form__wrap">
-            <div><input type="text" name="firstName" class="form__inp" placeholder="Имя"></div>
-            <div><input type="text" name="lastName" class="form__inp" placeholder="Фамилия"></div>
+            <div><input type="text" name="firstName" class="form__inp" placeholder="Имя" data-input-name></div>
+            <div><input type="text" name="lastName" class="form__inp" placeholder="Фамилия" data-input-surname></div>
           </div>
           <div class="form__wrap">
-            <div><input type="email" name="email" class="form__inp" placeholder="Email" required>
+            <div><input type="email" name="email" class="form__inp" placeholder="Email" required data-input-email>
             </div>
-            <div><input type="tel" name="phone" class="form__inp" placeholder="Телефон"></div>
+            <div><input type="tel" name="phone" class="form__inp" placeholder="Телефон" data-input-phone></div>
           </div>
           <div class="form__contacts">
-            <div><input type="url" name="linkSocial" class="form__inp" placeholder="Twitter"></div>
-            <div><input type="url" name="linkSocial" class="form__inp" placeholder="Facebook"></div>
-            <div><input type="url" name="linkSocial" class="form__inp" placeholder="LinkedIn"></div>
-            <div><input type="url" name="linkSocial" class="form__inp" placeholder="Telegram"></div>
-            <div><input type="url" name="linkSocial" class="form__inp" placeholder="VKontakte"></div>
+            <div><input type="url" name="linkSocial" class="form__inp" placeholder="Twitter" data-input-link></div>
+            <div><input type="url" name="linkSocial" class="form__inp" placeholder="Facebook" data-input-link></div>
+            <div><input type="url" name="linkSocial" class="form__inp" placeholder="LinkedIn" data-input-link></div>
+            <div><input type="url" name="linkSocial" class="form__inp" placeholder="Telegram" data-input-link></div>
+            <div><input type="url" name="linkSocial" class="form__inp" placeholder="VKontakte" data-input-link></div>
           </div>
           <div class="custom-select" style="width:200px; margin: 0 auto">
             <select name="courseSelect">
@@ -71,7 +71,7 @@
               <input type="checkbox" name="subscription" class="form__subs">
               Подписаться на рассылку факультета
             </label>
-            <input type="submit" class="form__btn" value="Отправить">
+            <input type="submit" class="form__btn" value="Отправить" data-submit>
           </div>
         </form>
       </div>

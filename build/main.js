@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./js/form-functions/form-functions.js":
+/*!*********************************************!*\
+  !*** ./js/form-functions/form-functions.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"popupOpen\": () => (/* binding */ popupOpen),\n/* harmony export */   \"closePopup\": () => (/* binding */ closePopup)\n/* harmony export */ });\nfunction popupOpen(data) {\n  document.querySelector(\".popup\").classList.add(\"popup__active\");\n  document.body.style.overflow = \"hidden\";\n  document.querySelector('.popup__data').innerHTML = \"\\n  <div style=\\\"max-width: 300px;\\\">\\n  \\u0412 \\u0444\\u043E\\u0440\\u043C\\u0443 \\u043F\\u043E\\u043F\\u0430\\u0434\\u0443\\u0442 \\u0442\\u0430\\u043A\\u0438\\u0435 \\u0434\\u0430\\u043D\\u043D\\u044B\\u0435: <br>\\n  \".concat(data, \"\\n  </div>\\n  \");\n}\nfunction closePopup() {\n  document.querySelector(\".popup\").classList.remove(\"popup__active\");\n  document.body.style.overflow = \"visible\";\n}\n\n//# sourceURL=webpack://web-lab/./js/form-functions/form-functions.js?");
+
+/***/ }),
+
 /***/ "./js/main.js":
 /*!********************!*\
   !*** ./js/main.js ***!
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mainPage_functions_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainPage-functions/tabs */ \"./js/mainPage-functions/tabs.js\");\n\nwindow.addEventListener(\"DOMContentLoaded\", function () {\n  (0,_mainPage_functions_tabs__WEBPACK_IMPORTED_MODULE_0__.tabsFunctionality)();\n});\n\n//# sourceURL=webpack://web-lab/./js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mainPage_functions_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainPage-functions/tabs */ \"./js/mainPage-functions/tabs.js\");\n/* harmony import */ var _popup_notification_popup_notification__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./popup-notification/popup-notification */ \"./js/popup-notification/popup-notification.js\");\n\n\nwindow.addEventListener(\"DOMContentLoaded\", function () {\n  (0,_mainPage_functions_tabs__WEBPACK_IMPORTED_MODULE_0__.tabsFunctionality)();\n  setTimeout(_popup_notification_popup_notification__WEBPACK_IMPORTED_MODULE_1__.popupNotification, 6000);\n});\n\n//# sourceURL=webpack://web-lab/./js/main.js?");
 
 /***/ }),
 
@@ -27,6 +37,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mai
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"tabsFunctionality\": () => (/* binding */ tabsFunctionality)\n/* harmony export */ });\nfunction tabsFunctionality() {\n  var tabs = document.querySelectorAll(\".tabs__item\");\n  tabs.forEach(function (tab) {\n    tab.addEventListener(\"click\", function () {\n      if (tab.classList.contains(\"tabs__item_active\")) {\n        tab.classList.remove(\"tabs__item_active\");\n      } else {\n        tab.classList.add(\"tabs__item_active\");\n      }\n    });\n  });\n}\n\n//# sourceURL=webpack://web-lab/./js/mainPage-functions/tabs.js?");
+
+/***/ }),
+
+/***/ "./js/popup-notification/popup-notification.js":
+/*!*****************************************************!*\
+  !*** ./js/popup-notification/popup-notification.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"popupNotification\": () => (/* binding */ popupNotification)\n/* harmony export */ });\n/* harmony import */ var _form_functions_form_functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../form-functions/form-functions */ \"./js/form-functions/form-functions.js\");\n\nfunction popupNotification(modalTimerId) {\n  document.querySelector(\".popup\").classList.add(\"popup__active\");\n  document.body.style.overflow = \"hidden\";\n  var buttonClosePopup = document.querySelectorAll(\".popup__btn-close\");\n  var infoRedirectToFormButton = document.querySelector('[data-link]');\n  infoRedirectToFormButton.addEventListener('click', function () {\n    document.location = 'formgrad.html';\n    (0,_form_functions_form_functions__WEBPACK_IMPORTED_MODULE_0__.closePopup)();\n  });\n  buttonClosePopup.forEach(function (button) {\n    button.addEventListener('click', _form_functions_form_functions__WEBPACK_IMPORTED_MODULE_0__.closePopup);\n  });\n}\n\n//# sourceURL=webpack://web-lab/./js/popup-notification/popup-notification.js?");
 
 /***/ })
 

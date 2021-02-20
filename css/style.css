@@ -7,6 +7,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background: linear-gradient(90deg, #5041b2 0%, #7969e6 100%);
   padding-bottom: 100px;
@@ -14,6 +15,10 @@ body {
 
 a {
   text-decoration: none !important;
+}
+
+button:focus {
+  outline: none;
 }
 
 li {
@@ -87,7 +92,6 @@ section {
 .menu__item a {
   color: white;
 }
-
 
 
 .menu__item:hover {
@@ -361,7 +365,6 @@ section {
 }
 
 
-
 /* Popup */
 
 .popup {
@@ -370,7 +373,7 @@ section {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0,0,0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   display: none;
   justify-content: center;
   align-items: center;
@@ -385,6 +388,30 @@ section {
   overflow-y: auto;
 }
 
+.popup__notif {
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+}
+
+.popup__notif div {
+  align-self: flex-end;
+}
+
+.popup__btn {
+  outline: none;
+  padding: 15px;
+  background-color: #4a4ab5;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.popup__btn:hover {
+  background-color: #606096;
+}
+
 .popup__wrap {
   padding: 50px;
   background-color: #fff;
@@ -392,6 +419,7 @@ section {
   position: relative;
   box-shadow: 0 0 12px 0 black;
 }
+
 
 .popup__close {
   position: absolute;
@@ -407,12 +435,10 @@ section {
 }
 
 
-
 .error {
   color: red;
   display: block;
 }
-
 
 
 /* SELECT */
