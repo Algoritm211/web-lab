@@ -71,7 +71,6 @@ export function baseJSValidation() {
 
   form.addEventListener('submit', (event) => {
     event.preventDefault()
-    alert(isFormValid)
     if (!isFormValid) {
       alert('Правильно заполните форму')
     }
