@@ -142,7 +142,7 @@ section {
 
 .graduate__content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -299,6 +299,8 @@ section {
   margin: 0 20px;
 }
 
+
+
 .form__contacts {
   margin-top: 20px;
   display: flex;
@@ -363,6 +365,8 @@ section {
 .form__btn:hover {
   background-color: #008a56;
 }
+
+
 
 
 /* Popup */
@@ -440,7 +444,85 @@ section {
   display: block;
 }
 
+.serverData {
+  display: flex;
+  align-items: center;
+}
 
-/* SELECT */
+.status {
+  color: red;
+  display: block;
+  text-align: center;
+}
+
+/* Content form */
+
+.user__content {
+  min-height: 200px;
+  width: 700px;
+}
+
+/* User card */
+
+.user__card {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  margin-bottom: 20px;
+  min-height: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon__status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon__status i {
+  font-size: 60px;
+  color: #51c851;
+}
+
+.card__content {
+
+}
+
+.card__content-title {
+  font-weight: 700;
+  text-align: center;
+}
+
+.card__content-info-title {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.content__ceil span {
+  font-weight: 700;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
+.delete__userCard {
+  width: 50%;
+  padding: 5px;
+  background-color: #c34b4b;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete__userCard:hover {
+  background-color: darkred;
+}
+
 
 

@@ -1,13 +1,28 @@
-import $ from 'jquery-validation'
-import {closePopup, popupOpen} from "./form-functions/form-functions";
-import {baseJSValidation, jqueryValidation} from "./form-functions/form-validation";
+
+import {closePopup, } from "./form-functions/form-functions";
+
+import {formValidateAndSubmit} from "./form-functions/form-validate";
+import {deleteUser, fetchUserData} from "./form-functions/fetch-users-data";
 
 window.addEventListener("DOMContentLoaded", () => {
-  const submitForm = document.querySelector(".form");
+
   const buttonClosePopup = document.querySelector(".popup__close");
+  const userContentSection = document.querySelector('.user__content')
 
-  baseJSValidation()
-  jqueryValidation()
+  userContentSection.addEventListener('click', (event) => {
 
-  buttonClosePopup.addEventListener('click', closePopup);
+    if (event.target && event.target.classList.contains('delete__userCard')) {
+      const id = event.target.getAttribute('data-id')
+      deleteUser(id)
+    }
+
+  })
+
+
+  const form = document.querySelector('.form')
+
+  formValidateAndSubmit()
+
+  buttonClosePopup.addEventListener('click', closePopup)
+  fetchUserData()
 })

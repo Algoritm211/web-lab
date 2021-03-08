@@ -30,16 +30,6 @@ class Student {
 }
 
 const alexey = new Student('Alex', 'Gorbunov', 19, 2)
-// alexey.ChangeSurname('Horbunov')
-// alexey.GetOlder(12)
-// alexey.MoveToSecondCourse()
-//
-// alexey.getStudentInfo
-
-// Имя Alex,
-// Фамилия: Horbunov,
-// Возраст: 31,
-// Курс: 3
 
 window.addEventListener('DOMContentLoaded', () => {
   const submitButton = document.querySelector('.submit__button')

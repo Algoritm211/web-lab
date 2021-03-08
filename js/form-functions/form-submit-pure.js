@@ -1,21 +1,16 @@
 import {closePopup, popupOpen} from "./form-functions";
 import $ from 'jquery';
 
-
-
-
-
-
+const message = {
+  loading: 'Загрузка...',
+  success: 'Спасибо, данные ушли на сервер',
+  failure: 'Что-то пошло не так, попробуйте еще раз'
+}
 
 export function formSubmitVanillaJS(form) {
   const popup = document.querySelector(".popup")
   popup.classList.add("popup__active")
 
-  const message = {
-    loading: 'Загрузка...',
-    success: 'Спасибо, данные ушли на сервер',
-    failure: 'Что-то пошло не так, попробуйте еще раз'
-  }
 
   const statusMessage = document.createElement('div')
   const serverData = document.createElement('div')
@@ -63,25 +58,4 @@ export function formSubmitVanillaJS(form) {
   })
 }
 
-export function formSendJQuery(form) {
-
-  const formData = new FormData(form)
-
-  const obj = {}
-  // логика для JSON
-  formData.forEach(function (value, key) {
-    obj[key] = value
-  })
-
-
-  $.ajax({
-    url: 'server.php',
-    type: "POST",
-    contentType: "application / json",
-    data: obj,
-    success: ()
-  })
-
-
-}
 
