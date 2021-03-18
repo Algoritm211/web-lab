@@ -10,7 +10,7 @@ export function popupOpen(data) {
 }
 
 export function closePopup() {
+  document.body.style.overflow = "visible";
   document.querySelector(".popup").classList.remove("popup__active");
   document.querySelector('.popup__data').innerHTML = ''
-  document.body.style.overflow = "visible";
 }

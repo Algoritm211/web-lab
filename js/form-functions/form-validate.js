@@ -25,10 +25,6 @@ export function formValidateAndSubmit() {
       courseSelect: {},
       subscription: {},
       linkTwitter: {},
-      linkFacebook: {},
-      linkLinkedin: {},
-      linkTelegram: {},
-      linkVK: {},
     },
     // Messages if not valid
     messages: {
